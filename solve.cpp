@@ -102,16 +102,20 @@ void simulate(vector<Drone> drones, vector<vector<vector<int>>> paths) {
 }
 int main()
 {
-   vector<Drone> drones = {
-    Drone(1, 1, 18, 2, 30),
-    Drone(2, 5, 22, 1.5, 20),
-    Drone(3, 10, 10, 1, 15)
-};
-vector<vector<vector<int>>> paths = get_paths(drones);
-for(int i=0;i<paths.size();i++){
-    cout<<"Drone "<<i<<":"<<endl;
-    for(auto point : paths[i])
-        cout<<point[1]<<" "<<point[2]<<endl;
-}
-return 0;
+   int n;
+   cin>>n;
+   vector<Drone> drones(n)
+   
+   for(int i=0;i<n;i++)
+   {
+    int x1,y1,x12,y12,t1;
+    Drone(x1,y1,x12,y12,t1);
+   }
+   vector<vector<vector<int>>> paths = get_paths(drones);
+   for(int i=0;i<paths.size();i++){
+       cout<<"Drone "<<i<<":"<<endl;
+       for(auto point : paths[i])
+           cout<<point[1]<<" "<<point[2]<<endl;
+   }
+   return 0;
 }
