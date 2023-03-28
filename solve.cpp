@@ -104,7 +104,7 @@ int main()
 {
    int n;
    cin>>n;
-   vector<Drone> drones(n)
+   vector<Drone> drones(n);
    
    for(int i=0;i<n;i++)
    {
